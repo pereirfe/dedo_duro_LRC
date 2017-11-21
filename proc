@@ -1,0 +1,2 @@
+# -grk 7
+./lrc_proc.bash | column -t -s"-" | awk 'NR <= 2; NR > 2 { print $0 | "sort -k 1" }'
